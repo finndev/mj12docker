@@ -12,3 +12,4 @@ RUN dpkg --add-architecture i386 \
  && curl https://www.majestic12.co.uk/files/mj12node/mono/mj12node_linux_v1716_net45.tgz | tar -xzC /home/mj12/MJ12node/ --strip-components=1 \
  && chown -R mj12:mj12 /home/mj12/
 ENTRYPOINT ["/run-mj12.sh"]
+
