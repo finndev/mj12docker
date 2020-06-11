@@ -9,6 +9,6 @@ RUN dpkg --add-architecture i386 \
  && rm -rf /var/lib/apt/lists/* \
  && useradd mj12 \
  && mkdir -p /home/mj12/MJ12node/ \
- && curl https://www.majestic12.co.uk/files/mj12node/mono/mj12node_linux_v1715_net45_up25.tgz | tar -xzC /home/mj12/MJ12node/ --strip-components=1 \
+ && curl https://www.majestic12.co.uk/files/mj12node/mono/mj12node_linux_v1716_net45.tgz | tar -xzC /home/mj12/MJ12node/ --strip-components=1 \
  && chown -R mj12:mj12 /home/mj12/
 ENTRYPOINT ["/run-mj12.sh"]
